@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <style>
+  {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
 .poster img{
   width: 275;
   length: 404;
-  border: 5px solid rgb(214, 137, 16);
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  padding: 5px;
 }
+  poster img:hover {
+  box-shadow: 0 0 2px 1px rgba(220, 118, 51, 0.5);
+}
+
 body {
   background-color: #FBEEE6;  
   text-align: center;
-  font-family: Calibri;
+  font-family: Sans-Serif;
   }
   /* Add a black background color to the top navigation */
 .topnav {
@@ -127,14 +163,34 @@ div.content {
     <div class="poster">
         <div class="row">
   <div class="column">
+    <div class="container">
     <a href="https://aydin-coder.github.io/drghamarian/DogHelp.pdf"> <img src="DogHelp.png"> </a>
+  <div class="overlay">راهنمای نگهداری سگ</div>
+</div>
+      <div class="container">
     <a href="https://aydin-coder.github.io/drghamarian/DogTrain2.pdf"> <img src="DogTrain2.png"> </a>
+  <div class="overlay">راهنمای تربیت و نگهداری سگ</div>
+</div>
+          <div class="container">
     <a href="https://aydin-coder.github.io/drghamarian/DogTrain.pdf"> <img src="DogTrain.png"> </a>
+  <div class="overlay">راهنمای تربیت سگ</div>
+</div>
+
    </div>
   <div class="column">
+              <div class="container">
     <a href="https://aydin-coder.github.io/drghamarian/Dog1.pdf"> <img src="Dog1.png"> </a>
+  <div class="overlay">راهنمای کمک های اولیه و مراقبت بهداشتی سگ</div>
+</div>
+              <div class="container">
     <a href="https://aydin-coder.github.io/drghamarian/Cat1.pdf"> <img src="Cat1.png"> </a>
+  <div class="overlay">راهنمای نگهداری و مراقبت از گربه</div>
+</div>
+
+              <div class="container">
     <a href="https://aydin-coder.github.io/drghamarian/DogPedia.pdf"> <img src="DogPedia.png"> </a>
+  <div class="overlay">راهنمای کامل نژاد های سگ</div>
+</div>
   </div>
       </div>
   </div>
