@@ -1,1 +1,269 @@
+<!DOCTYPE html>
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #E49D3D;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #D07700;
+  color: white;
+}
+
+/* Style the container/contact section */
+.con {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+  {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  border-radius: 4px;
+}
+
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+.poster img{
+  width: 275;
+  length: 404;
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  padding: 5px;
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(220, 118, 51, 0.7);
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: orange; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #E68400; /* Add a dark-grey background on hover */
+}
+
+body {
+  background-color: #FBEEE6;  
+  text-align: center;
+  font-family: Sans-Serif;
+  }
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #FBEEE6;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #D35400;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFE0B7;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  float: left;
+  text-align: center;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  float: center;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #E49D3D;
+  color: black;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #C87300;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: right;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+</style>
+<html>
+<head>
+   <link  type="image/x-icon" rel="icon" href="Pet logo.png">
+  <title> Dr. Ghamarian | Contact </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="sidebar">
+  <a href="index.html">خانه</a>
+  <a href="books.html">کتاب ها</a>
+  <a class="active" href="contact.html">ارتباط با ما</a>
+</div>
+
+</head>
+<body>
+<div class="content">
+ <div class="con">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>برای ارتباط با ما می توانید از فرم زیر استفاده کنید یا با شماره ۰۹۱۱۱۱۱۱۱۱۱۱ تماس بگیرید</p>
+  </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">نام</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">نام خانوادگی</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="subject">موضوع</label>
+        <textarea id="subject" name="subject" placeholder="Typr here.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+  </div>
+</div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </div>
+</body>
+</html>
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+  </script>
 
