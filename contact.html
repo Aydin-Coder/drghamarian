@@ -18,7 +18,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-a[type=submit] {
+input[type=submit] {
   background-color: #E49D3D;
   color: black;
   padding: 12px 20px;
@@ -27,7 +27,7 @@ a[type=submit] {
  text-decoration: none;
 }
 
-a[type=submit]:hover {
+input[type=submit]:hover {
   background-color: #D07700;
   color: white;
 }
@@ -226,14 +226,15 @@ div.content {
     <h2>ارتباط با ما</h2>
     <p>برای ارتباط با ما می توانید از فرم زیر استفاده کنید یا با شماره ۰۹۰۱۰۲۷۳۷۰۰ تماس بگیرید</p>
   </div>
-      <form action="/action_page.php">
+   action="mailto:aydin.ebrahimi@gmail.com" method="get" enctype="text/plain">
+      <form action="mailto:aydin.ebrahimi@gmail.com" method="get" enctype="text/plain">
         <label for="fname">نام</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
         <label for="lname">نام خانوادگی</label>
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
         <label for="subject">موضوع</label>
         <textarea id="subject" name="subject" placeholder="Type here.." style="height:170px"></textarea>
-       <a type="submit" href="https://aydin-coder.github.io/drghamarian/contact.html">Submit</a>
+       <input type="submit">Submit</input>
       </form>
      <br>
 </div>
